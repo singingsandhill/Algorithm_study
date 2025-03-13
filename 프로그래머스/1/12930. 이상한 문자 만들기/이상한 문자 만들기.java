@@ -1,7 +1,7 @@
 class Solution {
     public String solution(String s) {
         StringBuilder result = new StringBuilder();
-        String[] words = s.split(" ", -1); // 공백 유지 split
+        String[] words = s.split(" ", -1);
         
         for (int i = 0; i < words.length; i++) {
             StringBuilder transformedWord = new StringBuilder();
@@ -15,7 +15,7 @@ class Solution {
             }
             result.append(transformedWord);
             if (i < words.length - 1) {
-                result.append(" "); // 단어 사이의 공백 유지
+                result.append(" ");
             }
         }
         
